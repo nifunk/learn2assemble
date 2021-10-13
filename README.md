@@ -1,7 +1,7 @@
 # Learn2Assemble
 
 This repository is the official implementation of [Learn2Assemble with Structured Representations and Search for Robotic Architectural Construction](https://openreview.net/forum?id=wBT0lZJAJ0V) by N. Funk, G. Chalvatzaki, B. Belousov and J. Peters, which has been accepted in the Conference on Robot Learning (CoRL) 2021.
-Additional video material depicting the performance of the trained models can accesssed [here](https://sites.google.com/view/learn2assemble).
+Additional video material can accesssed [here](https://sites.google.com/view/learn2assemble).
 
 If you use code or ideas from this work for your projects or research, please cite it.
 
