@@ -1,0 +1,383 @@
+<?xml version="0.0" ?>
+<robot name="">
+	<link name="world">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="0.00000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+	</link>
+	<link name="base_link">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="4.00000"/>
+			<inertia ixx="0.01063" ixy="0" ixz="0" iyy="0.00875" iyz="0" izz="0.01810"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/visual/Base.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/collision/Base.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="shoulder_link">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="7.77800"/>
+			<inertia ixx="0.03987" ixy="0" ixz="0" iyy="0.03759" iyz="0" izz="0.03396"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/visual/Shoulder.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/collision/Shoulder.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="upper_arm_link">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.30600"/>
+			<mass value="12.93000"/>
+			<inertia ixx="0.65263" ixy="0" ixz="0" iyy="0.64257" iyz="0" izz="0.06386"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/visual/UpperArm.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/collision/UpperArm.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="forearm_link">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.28615"/>
+			<mass value="3.87000"/>
+			<inertia ixx="0.15827" ixy="0" ixz="0" iyy="0.15685" iyz="0" izz="0.01199"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/visual/Forearm.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/collision/Forearm.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="wrist_1_link">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="1.96000"/>
+			<inertia ixx="0.00437" ixy="0" ixz="0" iyy="0.00408" iyz="0" izz="0.00337"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/visual/Wrist1.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/collision/Wrist1.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="wrist_2_link">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="1.96000"/>
+			<inertia ixx="0.00437" ixy="0" ixz="0" iyy="0.00337" iyz="0" izz="0.00408"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/visual/Wrist2.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_5_0">
+				<color rgba="0.70000 0.70000 0.70000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/collision/Wrist2.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="wrist_3_link">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="0.20200"/>
+			<inertia ixx="0.00018" ixy="0" ixz="0" iyy="0.00031" iyz="0" izz="0.00018"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/visual/Wrist3.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="ur_description/meshes/ur10/collision/Wrist3.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="rh_p12_rn_mount">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="0.00000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/mount.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+			<material name="mat_-1_0">
+				<color rgba="0.75000 0.75000 0.75000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/mount.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="rh_p12_rn_base">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.03200"/>
+			<mass value="0.23600"/>
+			<inertia ixx="0.00023" ixy="0" ixz="0" iyy="0.00015" iyz="0" izz="0.00022"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/base.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+			<material name="mat_0_0">
+				<color rgba="0.20000 0.20000 0.20000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/base.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="rh_p12_rn_r1">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.03400 0.00400"/>
+			<mass value="0.06800"/>
+			<inertia ixx="0.00006" ixy="0" ixz="0" iyy="0.00003" iyz="0" izz="0.00004"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/r1.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+			<material name="mat_1_0">
+				<color rgba="0.20000 0.20000 0.20000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/r1.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="rh_p12_rn_r2">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00600 0.01100"/>
+			<mass value="0.02200"/>
+			<inertia ixx="0.00001" ixy="0" ixz="0" iyy="0.00001" iyz="0" izz="0.00000"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/r2_digit_mount_scaled_collision.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+			<material name="mat_2_0">
+				<color rgba="0.20000 0.20000 0.20000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/r2_digit_mount_scaled_collision.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="rh_p12_rn_l1">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 -0.03400 0.00400"/>
+			<mass value="0.06800"/>
+			<inertia ixx="0.00006" ixy="0" ixz="0" iyy="0.00003" iyz="0" izz="0.00004"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/l1.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+			<material name="mat_3_0">
+				<color rgba="0.20000 0.20000 0.20000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/l1.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="rh_p12_rn_l2">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 -0.00600 0.01100"/>
+			<mass value="0.02200"/>
+			<inertia ixx="0.00001" ixy="0" ixz="0" iyy="0.00001" iyz="0" izz="0.00000"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/l2_digit_mount_scaled_collision.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+			<material name="mat_4_0">
+				<color rgba="0.20000 0.20000 0.20000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="rh_p12_rn_description/meshes/l2_digit_mount_scaled_collision.stl" scale="0.00100 0.00100 0.00100"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="tcp">
+		<inertial>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="0.00000"/>
+			<inertia ixx="0.00000" ixy="0" ixz="0" iyy="0.00000" iyz="0" izz="0.00000"/>
+		</inertial>
+	</link>
+	<joint name="world_joint" type="fixed">
+		<parent link="world"/>
+		<child link="base_link"/>
+<limit effort="0.00000" lower="0.00000" upper="-1.00000" velocity="0.00000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+		<axis xyz="0.00000 0.00000 0.00000"/>
+	</joint>
+	<joint name="shoulder_pan_joint" type="revolute">
+		<parent link="base_link"/>
+		<child link="shoulder_link"/>
+<limit effort="330.00000" lower="-6.28319" upper="6.28319" velocity="2.16000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.12730"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="shoulder_lift_joint" type="revolute">
+		<parent link="shoulder_link"/>
+		<child link="upper_arm_link"/>
+<limit effort="330.00000" lower="-6.28319" upper="6.28319" velocity="2.16000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 1.57080 -0.00000" xyz="0.00000 0.22094 0.00000"/>
+		<axis xyz="0.00000 1.00000 0.00000"/>
+	</joint>
+	<joint name="elbow_joint" type="revolute">
+		<parent link="upper_arm_link"/>
+		<child link="forearm_link"/>
+<limit effort="150.00000" lower="-6.28319" upper="6.28319" velocity="3.15000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 -0.17190 0.61200"/>
+		<axis xyz="0.00000 1.00000 0.00000"/>
+	</joint>
+	<joint name="wrist_1_joint" type="revolute">
+		<parent link="forearm_link"/>
+		<child link="wrist_1_link"/>
+<limit effort="54.00000" lower="-6.28319" upper="6.28319" velocity="3.20000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 1.57080 -0.00000" xyz="0.00000 0.00000 0.57230"/>
+		<axis xyz="0.00000 1.00000 0.00000"/>
+	</joint>
+	<joint name="wrist_2_joint" type="revolute">
+		<parent link="wrist_1_link"/>
+		<child link="wrist_2_link"/>
+<limit effort="54.00000" lower="-6.28319" upper="6.28319" velocity="3.20000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.11490 0.00000"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="wrist_3_joint" type="revolute">
+		<parent link="wrist_2_link"/>
+		<child link="wrist_3_link"/>
+<limit effort="54.00000" lower="-6.28319" upper="6.28319" velocity="3.20000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.11570"/>
+		<axis xyz="0.00000 1.00000 0.00000"/>
+	</joint>
+	<joint name="gripper_wrist_joint" type="fixed">
+		<parent link="wrist_3_link"/>
+		<child link="rh_p12_rn_mount"/>
+<limit effort="0.00000" lower="0.00000" upper="-1.00000" velocity="0.00000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="-1.57080 0.00000 0.00000" xyz="0.00000 0.08252 0.00000"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<joint name="rh_mount" type="fixed">
+		<parent link="rh_p12_rn_mount"/>
+		<child link="rh_p12_rn_base"/>
+<limit effort="20.00000" lower="0.00000" upper="1.00000" velocity="6.50000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.04500"/>
+		<axis xyz="0.00000 0.00000 0.00000"/>
+	</joint>
+	<joint name="rh_r1" type="revolute">
+		<parent link="rh_p12_rn_base"/>
+		<child link="rh_p12_rn_r1"/>
+<limit effort="20.00000" lower="0.00000" upper="1.10000" velocity="6.50000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00800 0.04800"/>
+		<axis xyz="1.00000 0.00000 0.00000"/>
+	</joint>
+	<joint name="rh_r2" type="fixed">
+		<parent link="rh_p12_rn_r1"/>
+		<child link="rh_p12_rn_r2"/>
+<limit effort="20.00000" lower="0.00000" upper="1.00000" velocity="6.50000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="-0.75000 0.00000 0.00000" xyz="0.00000 0.04936 0.02850"/>
+		<axis xyz="0.00000 0.00000 0.00000"/>
+	</joint>
+	<joint name="rh_l1" type="revolute">
+		<parent link="rh_p12_rn_base"/>
+		<child link="rh_p12_rn_l1"/>
+<limit effort="20.00000" lower="0.00000" upper="1.10000" velocity="6.50000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 -0.00800 0.04800"/>
+		<axis xyz="-1.00000 0.00000 0.00000"/>
+	</joint>
+	<joint name="rh_l2" type="fixed">
+		<parent link="rh_p12_rn_l1"/>
+		<child link="rh_p12_rn_l2"/>
+<limit effort="20.00000" lower="0.00000" upper="1.00000" velocity="6.50000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.75000 -0.00000 0.00000" xyz="0.00000 -0.04936 0.02850"/>
+		<axis xyz="0.00000 0.00000 0.00000"/>
+	</joint>
+	<joint name="tcp" type="fixed">
+		<parent link="rh_p12_rn_base"/>
+		<child link="tcp"/>
+<limit effort="0.00000" lower="0.00000" upper="-1.00000" velocity="0.00000"/>		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.14500"/>
+		<axis xyz="0.00000 0.00000 0.00000"/>
+	</joint>
+</robot>
